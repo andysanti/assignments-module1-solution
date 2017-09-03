@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+    <head>
+         <meta charset="utf-8">
+        <title>tarea 1</title>
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="LunchCheckController">
+            <h1>Ingrese las comidas </h1>
+            <p>NOT consider and empty item, i.e., , , as an item towards to the count</p>
+            <input type="text" name="{{nombre}}" ng-model="nombre">
+            <br>
+            <button id="res" ng-click="calculo()" name="res">Check If Too Much</button>
+            <div name="resultado">
+                {{mensaje}}
+                
+            </div>
+        </div>
+    </body>
+</html>
